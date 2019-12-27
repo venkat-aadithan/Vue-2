@@ -8,9 +8,8 @@
     <body>
         <div id="root" class="container">
             {{ Title }}
-            <tabs :data="persons">
-                
-            </tabs>
+            <coupon @entered="couponEntered"></coupon>
+            <h1 v-if="isCouponApplied">Coupon has been applied</h1>
         </div>
     </body>
     <script src="vue.js"></script>
